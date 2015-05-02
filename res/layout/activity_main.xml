@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rlResetDatabase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvName"
+            android:layout_below="@+id/tvName" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/tvHotness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etName"
+            android:layout_below="@+id/etName"
+            android:text="Hotness Scale" />
+
+        <EditText
+            android:id="@+id/etHotness"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvHotness"
+            android:layout_below="@+id/tvHotness" >
+        </EditText>
+
+        <Button
+            android:id="@+id/btnUpdateDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etHotness"
+            android:layout_below="@+id/etHotness"
+            android:text="Save Entry" />
+
+        <Button
+            android:id="@+id/btnViewDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnUpdateDatabase"
+            android:layout_below="@+id/btnUpdateDatabase"
+            android:layout_marginTop="23dp"
+            android:text="View Database" />
+
+        <Button
+            android:id="@+id/btnDeleteDatabase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnUpdateDatabase"
+            android:layout_below="@+id/btnViewDatabase"
+            android:layout_marginTop="24dp"
+            android:text="Reset Database" />
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/pbWait"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
