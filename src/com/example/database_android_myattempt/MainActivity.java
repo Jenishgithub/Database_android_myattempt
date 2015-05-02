@@ -25,7 +25,7 @@ public class MainActivity extends Activity implements OnClickListener {
 	Button btnDeleteDatabase;
 	RelativeLayout rlResetDatabase;
 	ProgressBar pbWwait;
-
+//yo
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
